@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Music Player</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f0f0f0; /* Change this to your desired background color */
+            text-align: center;
+            padding: 20px;
+        }
+        #player {
+            width: 300px;
+            margin: auto;
+            background-color: #ffffff; /* Change this to your desired player background color */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="player">
+        <img src="https://drive.google.com/uc?id=1tTlBrDFRa5ofBKmkdm63Yz3U7muF0FAe" alt="Artist Image" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h2>アーマン</h2>
+        <audio controls id="audioPlayer">
+            <!-- Add your music URLs here -->
+            <source src="https://drive.google.com/uc?id=1IsbbERJL0YC-kutyErvdv9NoFw7DEWVz" type="audio/mp3">
+            <!-- Add more source elements for additional songs -->
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="shuffle()">Shuffle</button>
+    </div>
+
+    <script>
+        function shuffle() {
+            // Add your shuffle logic here
+            alert('Shuffling...');
+        }
+    </script>
+</body>
+</html>
